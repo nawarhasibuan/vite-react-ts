@@ -1,27 +1,25 @@
-# React + TypeScript + Vite
+# React TS Template
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This template provides a setup to get React working in Vite with HMR, ESLint rules and Prettier
 
-Currently, two official plugins are available:
+Currently, features available in this template:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [react-router-dom](https://reactrouter.com/en/main)
+- [tailwindcss](https://tailwindcss.com/docs/installation) for styling
+- [@redux-toolkit](https://redux-toolkit.js.org/introduction/getting-started) for context store
 
-## Expanding the ESLint configuration
+## Adding New Feature
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+create a a file `index.ts` inside `src/features/todo`. This file is an API for `todo` module
 
-- Configure the top-level `parserOptions` property like this:
+## Other Folder
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+inside `src/` may be there are:
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- `lib` facades function for various diffrent library
+- `utils` utility function such as parser
+- `data` any data such as constants.
+- `assets` static asset
+- `components` common component
+- `hooks` custom hooks
+- `service` for interact with API
