@@ -8,6 +8,8 @@ const config = {
   singleQuote: true,
   bracketSpacing: true,
   jsxBracketSameLine: false,
+  plugins: ['prettier-plugin-tailwindcss'],
+  tailwindConfig: 'tailwind.config.js',
 };
 
 export default config;
